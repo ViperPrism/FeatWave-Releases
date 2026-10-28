@@ -1,0 +1,27 @@
+name: 💡 Suggest an idea
+description: Something you'd love FeatWave to do
+title: "[Idea] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+      description: What should FeatWave do, and how would it help your stream?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Which platform is it for?
+      options:
+        - Both Kick and Twitch
+        - Kick
+        - Twitch
+        - Doesn't matter
+
+  - type: input
+    id: version
+    attributes:
+      label: FeatWave version you're using (optional)
