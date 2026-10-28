@@ -1,0 +1,63 @@
+name: 🐞 Report a problem
+description: Something in FeatWave isn't working right
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping make FeatWave better!
+        **Tip:** the easiest way to report is the **🐞 Report a problem** button at the bottom of FeatWave's sidebar - it fills most of this in for you.
+
+  - type: textarea
+    id: what_happened
+    attributes:
+      label: What went wrong?
+      description: What happened, and what did you expect to happen instead?
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: What were you doing right before?
+      placeholder: |
+        1. Opened Channel Points
+        2. Clicked Refresh
+        3. ...
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Which platform was it on?
+      options:
+        - Kick
+        - Twitch
+        - Both
+        - Not sure / not about a platform
+
+  - type: input
+    id: version
+    attributes:
+      label: FeatWave version
+      description: Shown at the bottom of FeatWave's sidebar, e.g. 0.9.6
+    validations:
+      required: true
+
+  - type: input
+    id: system
+    attributes:
+      label: Windows version
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Details from FeatWave
+      description: Filled in automatically by the Report a problem button. Never paste your Client Secret or anything from a .env file.
+      render: text
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots (optional)
+      description: Drag screenshots in here. Hide any secret keys first.
