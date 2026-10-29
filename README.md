@@ -1,6 +1,6 @@
 # FeatWave
 
-**One chat bot for Kick and Twitch.** See both chats in one place, play sounds from commands and channel points, run timed messages, and moderate both chats - from one app on your PC.
+**One chat bot for Kick and Twitch.** See both chats in one place with emotes and badges, show alerts on stream, play sounds from commands and channel points, run timed messages, see who's watching and moderate both chats - from one app on your PC.
 
 > 🧪 **FeatWave is in early testing.** Things may break - that's what testing is for! Please report anything odd (see [Reporting problems](#-reporting-problems)).
 >
@@ -37,15 +37,35 @@ Your keys and logins are saved **only on your PC**. FeatWave never sends them an
 
 | Feature | Kick | Twitch |
 |---|:---:|:---:|
-| Combined chat (badges **K** and **T** show which platform) | ✅ | ✅ |
+| Combined chat with platform badges | ✅ | ✅ |
+| Emotes as pictures (incl. 7TV, BTTV, FFZ) | ✅ | ✅ |
+| Name colors + badge pictures (hover for details) | ✅ | ✅ |
+| Your name highlighted when mentioned · chat pauses under your mouse | ✅ | ✅ |
 | Send messages to one or both chats | ✅ | ✅ |
 | Commands - with or without `!`, sounds + replies, cooldowns | ✅ | ✅ |
 | Channel point rewards → sounds + messages | ✅ | ✅ |
 | First-time chatter sounds | ✅ | ✅ |
 | Timers (automatic messages, only while live) | ✅ | ✅ |
+| Events feed - follows, subs, gifts, raids/hosts, bits, Kicks, redemptions | ✅ | ✅ |
+| **Alerts** - sound, GIF/picture/video + text on stream, thank-you in chat | ✅ | ✅ |
+| **Viewer list** - grouped by streamer, mods, VIPs, subs, viewers | ✅ * | ✅ |
 | Moderation - click a name to delete / timeout / ban | ✅ | ✅ |
 | Text size (Settings, or Ctrl + / Ctrl -) | ✅ | ✅ |
 | Backup & restore your whole setup | ✅ | ✅ |
+
+\* Kick only shares a viewer count, so the Kick list shows people who have chatted.
+
+---
+
+## 🔔 Showing alerts on stream (OBS)
+
+1. Set up your alerts on FeatWave's **Alerts** page (each platform has its own).
+2. In OBS, add a **Browser Source**:
+   - **URL:** `http://localhost:8790/alerts` (the Alerts page has a Copy button)
+   - **Width:** 1920 · **Height:** 1080 (or your canvas size)
+3. Click **Test** on any alert in FeatWave to see it in OBS.
+
+FeatWave has to be open for alerts to show.
 
 ---
 
@@ -54,6 +74,8 @@ Your keys and logins are saved **only on your PC**. FeatWave never sends them an
 - After logging in, logging out or turning a platform on/off, FeatWave **restarts itself** to apply it.
 - Kick chat uses the same live feed as Kick's own website. If Kick changes it, Kick chat may stop until a FeatWave update.
 - FeatWave can trigger on Twitch rewards made by other apps (like Mix It Up), but can't edit them yet.
+- Kick doesn't share its badge pictures, so FeatWave draws simple ones. You can pick your own in **Settings**.
+- Updated from an older version? **Log in to Twitch once more** (Connections page) so the viewer list can see your mods and VIPs.
 - Windows only for now.
 
 ---
