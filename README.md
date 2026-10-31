@@ -1,6 +1,6 @@
 # FeatWave
 
-**One chat bot for Kick and Twitch.** See both chats in one place with emotes and badges, show alerts on stream, play sounds from commands and channel points, run timed messages, see who's watching and moderate both chats - from one app on your PC.
+**One chat bot for Kick and Twitch.** See both chats in one place with emotes and badges, show alerts on stream, manage channel point rewards, take song requests, read messages aloud, give viewers their own entrances, run timed messages, see who's watching and moderate both chats - from one app on your PC.
 
 > 🧪 **FeatWave is in early testing.** Things may break - that's what testing is for! Please report anything odd (see [Reporting problems](#-reporting-problems)).
 >
@@ -43,8 +43,12 @@ Your keys and logins are saved **only on your PC**. FeatWave never sends them an
 | Your name highlighted when mentioned · chat pauses under your mouse | ✅ | ✅ |
 | Send messages to one or both chats | ✅ | ✅ |
 | Commands - with or without `!`, sounds + replies, cooldowns | ✅ | ✅ |
-| Channel point rewards → sounds + messages | ✅ | ✅ |
-| First-time chatter sounds | ✅ | ✅ |
+| **Make, edit, pause and delete channel point rewards** from FeatWave | ✅ | ✅ |
+| Channel point rewards → sounds, messages, song requests, text to speech | ✅ | ✅ |
+| **Song requests** (`!sr`) on Spotify (Premium) or YouTube (free), plus a Now Playing box for OBS | ✅ | ✅ |
+| **Text to speech** channel point rewards, with blocked words and a skip button | ✅ | ✅ |
+| **Entrances** - each viewer's own sound on their first chat or with their own command | ✅ | ✅ |
+| First-time chatter sound for everyone else | ✅ | ✅ |
 | Timers (automatic messages, only while live) | ✅ | ✅ |
 | Events feed - follows, subs, gifts, raids/hosts, bits, Kicks, redemptions | ✅ | ✅ |
 | **Alerts** - sound, GIF/picture/video + text on stream, thank-you in chat | ✅ | ✅ |
@@ -73,7 +77,9 @@ FeatWave has to be open for alerts to show.
 
 - After logging in, logging out or turning a platform on/off, FeatWave **restarts itself** to apply it.
 - Kick chat uses the same live feed as Kick's own website. If Kick changes it, Kick chat may stop until a FeatWave update.
-- FeatWave can trigger on Twitch rewards made by other apps (like Mix It Up), but can't edit them yet.
+- Twitch only lets the app that made a reward edit it. FeatWave can play sounds and messages for rewards made on the website or by other apps (like Mix It Up), but to edit one in FeatWave, delete it there and make it again with **+ New Reward**.
+- Spotify song requests need Spotify Premium (Spotify's rule). YouTube song requests are free; typing song names (instead of links) needs a free YouTube API key.
+- Entrances play on a viewer's first message - Kick doesn't tell apps when someone just opens your stream.
 - Kick doesn't share its badge pictures, so FeatWave draws simple ones. You can pick your own in **Settings**.
 - Updated from an older version? **Log in to Twitch once more** (Connections page) so the viewer list can see your mods and VIPs.
 - Windows only for now.
