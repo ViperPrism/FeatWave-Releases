@@ -26,7 +26,7 @@ FeatWave opens on the **Connections** page.
 
 1. **Get your app keys.** Click **"How to get my Kick keys"** and follow the steps, then do the same for Twitch. Each guide has an "Open developer page" button and a Copy button for the address you need to paste.
 2. **Paste your keys** into the boxes and click **Save keys**.
-3. Click **Log in with Kick** and **Log in with Twitch**, approve in your browser, and let FeatWave restart.
+3. Click **Log in with Kick** and **Log in with Twitch** and approve in your browser. FeatWave connects straight away.
 4. Head to the **Dashboard** - your chat from both platforms shows up there.
 
 Your keys and logins are saved **only on your PC**. FeatWave never sends them anywhere except to Kick and Twitch.
@@ -38,19 +38,20 @@ Your keys and logins are saved **only on your PC**. FeatWave never sends them an
 | Feature | Kick | Twitch |
 |---|:---:|:---:|
 | Combined chat with platform badges | ✅ | ✅ |
-| Emotes as pictures (incl. 7TV, BTTV, FFZ) | ✅ | ✅ |
+| Emotes as pictures, animated ones move (incl. 7TV, BTTV, FFZ) | ✅ | ✅ |
 | Name colors + badge pictures (hover for details) | ✅ | ✅ |
 | Your name highlighted when mentioned · chat pauses under your mouse | ✅ | ✅ |
 | Send messages to one or both chats | ✅ | ✅ |
-| Commands - with or without `!`, sounds + replies, cooldowns | ✅ | ✅ |
+| Commands - with or without `!`, sounds + replies, cooldowns, once per stream | ✅ | ✅ |
+| **Personal commands** - a viewer's own sound, by command and/or on their first chat | ✅ | ✅ |
 | **Make, edit, pause and delete channel point rewards** from FeatWave | ✅ | ✅ |
 | Channel point rewards → sounds, messages, song requests, text to speech | ✅ | ✅ |
-| **Song requests** (`!sr`) on Spotify (Premium) or YouTube (free), plus a Now Playing box for OBS | ✅ | ✅ |
-| **Text to speech** channel point rewards, with blocked words and a skip button | ✅ | ✅ |
-| **Entrances** - each viewer's own sound on their first chat or with their own command | ✅ | ✅ |
+| **Song requests** (`!sr` or channel points) on Spotify (Premium) or YouTube (free, with a backup playlist), plus a Now Playing box for OBS | ✅ | ✅ |
+| **Text to speech** channel point rewards - natural voices, length and voice per reward, blocked words, skip button | ✅ | ✅ |
 | First-time chatter sound for everyone else | ✅ | ✅ |
 | Timers (automatic messages, only while live) | ✅ | ✅ |
-| Events feed - follows, subs, gifts, raids/hosts, bits, Kicks, redemptions | ✅ | ✅ |
+| Events feed - follows, subs, gifts, raids/hosts, bits, Kicks, redemptions | ✅ ** | ✅ |
+| **Stream info** - change your title and category on both at once (or different on each) | ✅ | ✅ |
 | **Alerts** - sound, GIF/picture/video + text on stream, thank-you in chat | ✅ | ✅ |
 | **Viewer list** - grouped by streamer, mods, VIPs, subs, viewers | ✅ * | ✅ |
 | Moderation - click a name to delete / timeout / ban | ✅ | ✅ |
@@ -58,6 +59,8 @@ Your keys and logins are saved **only on your PC**. FeatWave never sends them an
 | Backup & restore your whole setup | ✅ | ✅ |
 
 \* Kick only shares a viewer count, so the Kick list shows people who have chatted.
+
+\*\* Kick doesn't send follows to desktop apps yet, so FeatWave shows new Kick followers as "Someone followed!" - or instantly with names if you connect StreamElements (Connections page).
 
 ---
 
@@ -75,7 +78,6 @@ FeatWave has to be open for alerts to show.
 
 ## ⚠️ Known limits (no need to report these)
 
-- After logging in, logging out or turning a platform on/off, FeatWave **restarts itself** to apply it.
 - Kick chat uses the same live feed as Kick's own website. If Kick changes it, Kick chat may stop until a FeatWave update.
 - Twitch only lets the app that made a reward edit it. FeatWave can play sounds and messages for rewards made on the website or by other apps (like Mix It Up), but to edit one in FeatWave, delete it there and make it again with **+ New Reward**.
 - Spotify song requests need Spotify Premium (Spotify's rule). YouTube song requests are free; typing song names (instead of links) needs a free YouTube API key.
